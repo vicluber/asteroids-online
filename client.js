@@ -1,5 +1,8 @@
 let socket = io();
-
+let chat = document.getElementById('message');
+function sendMessage(){
+  socket.emit('chat', chat.value);
+}
 let WIDTH = document.documentElement.clientWidth - 50;
 let HEIGHT = document.documentElement.clientHeight - 50;
 let canvas = document.getElementById("myCanvas");
