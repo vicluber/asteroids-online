@@ -1,6 +1,6 @@
 api:  
      build: .  
      volumes:    
-         - "./api:/src/"  
+         - ".:/usr/src/app"  
      ports:    
          - "80:5000"

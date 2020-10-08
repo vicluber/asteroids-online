@@ -15,7 +15,7 @@ const clientPath = __dirname;
 app.use(express.static(clientPath));
 // Starts the server.
 server.listen(5000, function() {
-  console.log('Starting server on port 5000 blabla');
+  console.log('Starting server on port 5000 (Ejecutando servidor en puerto 5000)');
 });
 
 function isEmpty( obj ) {
